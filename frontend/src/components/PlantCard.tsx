@@ -8,22 +8,18 @@ import { IoBagHandleOutline } from "react-icons/io5";
 
 const PlantCard = ({ name, bio, price, image }: PlantCardProps) => {
     return (
-        <div className="relative w-lg">
-
-            <img src={image} alt={name} className="absolute w-[459px] h-[459px] left-1/2 -translate-x-1/2 z-20 -top-30" />
-
-            <div className="relative w-full h-[644px] bg-[rgb(38,46,34)] rounded-[77px]  text-white overflow-hidden shadow-2xl">
-                <div className="absolute left-1/2 -translate-x-1/2 -top-9/12 w-[580px] h-135.5 bg-[rgba(27,35,22,1)] rounded-full"></div>
-
-                <div className="absolute top-1/2 left-0 px-14 mt-12">
+        <div className="relative w-[350px] h-[480px] rounded-[5rem] bg-[rgb(38,46,34)] drop-shadow-2xl text-white">
+            <img src={image} className="block absolute z-20 top-0 left-1/2 -translate-x-1/2 -translate-y-2/6 h-[20rem]" />
+            <div className="relative w-full h-full rounded-[5rem]  p-2 border-t-0 border border-white/10 overflow-hidden">
+                <div className="absolute w-[22rem] h-[16rem] -top-[15rem] left-1/2 -translate-x-1/2 z-10 rounded-full bg-[rgba(27,35,22,1)] border  border-white/10"></div>
+                <div className="absolute top-1/2 w-ful h-1/2 px-6 ">
                     <h1 className=" text-4xl font-light">{name}</h1>
-                    <p className="mt-6 text-xl font-light tracking-wide ">{bio}</p>
-                    <div className="mt-4 flex w-full justify-between">
-                        <h2 className="text-4xl ">Rs. {price}/-</h2>
-                        <div className="flex items-center justify-center w-12 h-12 border rounded-lg cursor-pointer"><IoBagHandleOutline size={24} /></div>
+                    <p className="mt-2 text-lg font-light tracking-wide min-h-[6rem]">{bio}</p>
+                    <div className="mt-2 flex w-full justify-between">
+                        <h2 className="text-2xl ">Rs. {price}/-</h2>
+                        <div className="flex items-center justify-center w-8 h-8 border rounded-lg cursor-pointer"><IoBagHandleOutline size={24} /></div>
                     </div>
                 </div>
-
             </div>
         </div>
     );

@@ -5,8 +5,8 @@ import Aglaonema from '../assets/c8eb5b1abede1308e0eaf899d1f7faae62a0c2f6.png'
 const HeroBanner = () => {
     return (
         <>
-            <section className="min-h-screen">
-                <div className='relative z-10 p-4 md:p-12 md:py-20 h-[calc(100vh-80px)] max-h-[800px]'>
+            <section className="min-h-xl">
+                <div className='relative z-10 p-4 md:p-12 md:py-20 h-[calc(100vh-80px)] '>
                     <div className='flex gap-4 justify-between w-full h-full text-white mt-22'>
                         <div className="flex flex-col justify-between ">
                             <div>
