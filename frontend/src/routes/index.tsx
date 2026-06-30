@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router"
 import BaseLayout from "../layout/base.layout"
-import HeroSection from '../pages/HeroSection'
+import MainSection from '../pages/MainSection'
 
 
 const AppRoutes = () => {
@@ -8,7 +8,7 @@ const AppRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<BaseLayout />}>
-                    <Route index element={<HeroSection/>} />            
+                    <Route index element={<MainSection/>} />            
                 </Route>
             </Routes>
         </BrowserRouter>
