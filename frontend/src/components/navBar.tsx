@@ -33,9 +33,9 @@ const NavBar = () => {
         </div>
       </div>
       {open && (
-        <div className="absolute left-0 top-full z-50 w-full px-6 py-6 lg:hidden">
+        <div className="absolute left-0 top-full z-50 w-full px-6 py-6 lg:hidden bg-[rgba(27,35,22,1)]/10 backdrop-blur-md border-b">
           <ul className="flex flex-col gap-6 text-xl font-['Indie_Flower']">
-            <li>Home</li>
+            <li >Home</li>
             <li>Plants Type</li>
             <li>More</li>
             <li>Contact</li>

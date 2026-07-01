@@ -29,53 +29,92 @@ const items: TrendyItem[] = [
     },
 ]
 
-function TrendyCard({ image, title, description, price, imageSide }: TrendyItem) {
-    const media = (
-        <div className="hidden md:flex shrink-0 items-center justify-center max-md:order-first">
-            <img
-                src={image}
-                alt=""
-                className="absolute -top-1/2 w-[38rem] max-w-full drop-shadow-2xl max-md:w-[22rem]"
-            />
-        </div>
-    )
+function TrendyCard({
+  image,
+  title,
+  description,
+  price,
+  imageSide,
+}: TrendyItem) {
+  const Image = (
+    <div className="flex justify-center">
+      <img
+        src={image}
+        alt={title}
+        className="
+          w-52
+          sm:w-64
+          md:w-72
+          lg:w-80
+          xl:w-[26rem]
+          object-contain
+          drop-shadow-2xl
+          -mt-20
+          md:-mt-28
+          lg:-mt-36
+        "
+      />
+    </div>
+  );
 
-    const body = (
-        <div className="flex flex-col justify-center max-md:items-center max-md:text-center">
-            <h3 className=" font-semibold tracking-wide text-xl md:text-3xl">{title}</h3>
-            <p className="mt-5 max-w-[35 rem] text-sm font-light text-white">
-                {description}
-            </p>
-            <p className="mt-6 text-3xl font-semibold">{price}</p>
-            <div className="mt-7 flex items-center gap-5">
-                <Button className='w-28 h-12 text-lg px-2 py-2'>Explore</Button>
-                <Button variant="icon" aria-label="Add to cart" className='w-12 h-12'>
-                    <Icon name="bag" size="1.1em" />
-                </Button>
-            </div>
-        </div>
-    )
+  const Content = (
+    <div className="flex flex-col justify-center text-center lg:text-left">
+      <h3 className="text-2xl md:text-3xl font-semibold">
+        {title}
+      </h3>
 
-    return (
-        <div className="relative bg-white/10 backdrop-blur-lg h-[400px] grid grid-cols-2 items-center gap-14 rounded-[8rem] px-20 py-8 max-md:grid-cols-1 max-md:gap-6 max-md:rounded-4xl max-md:py-8">
-            {imageSide === 'left' ? (
-                <>
-                    {media}
-                    {body}
-                </>
-            ) : (
-                <>
-                    {body}
-                    {media}
-                </>
-            )}
-        </div>
-    )
+      <p className="mt-5 text-sm md:text-base text-white/80 leading-7 max-w-xl mx-auto lg:mx-0">
+        {description}
+      </p>
+
+      <p className="mt-6 text-2xl md:text-3xl font-semibold">
+        {price}
+      </p>
+
+      <div className="mt-7 flex justify-center lg:justify-start gap-4">
+        <Button className="h-12 w-32 text-lg">
+          Explore
+        </Button>
+
+        <Button variant="icon" className="h-12 w-12">
+          <Icon name="bag" size="1.1em" />
+        </Button>
+      </div>
+    </div>
+  );
+
+  return (
+    <div
+      className="
+        rounded-3xl
+        lg:rounded-[5rem]
+        bg-white/10
+        backdrop-blur-xl
+        border
+        border-white/10
+        px-6
+        py-8
+        sm:px-8
+        lg:px-14
+        lg:py-10
+      "
+    >
+      <div
+        className={`
+          flex flex-col lg:flex-row items-center gap-8 lg:gap-16
+          ${imageSide === "right" ? "lg:flex-row-reverse" : ""}
+        `}
+      >
+        {Image}
+        {Content}
+      </div>
+    </div>
+  );
 }
 
 const TreadyPlant = () => {
     return (
-        <div className='relative z-10 min-h-xl w-full  text-white px-12 md:mt-24'>
+        <div className='conainer mx-auto relative z-10 min-h-xl w-full  text-white px-12 md:mt-24 pb-[4rem]'>
             <div className='w-full flex justify-center'>
                 <h1
                     className="relative inline-block text-3xl md:text-6xl font-semibold font-['Inter']

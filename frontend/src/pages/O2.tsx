@@ -4,7 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 const O2 = () => {
     return (
-        <section className='flex flex-col items-center my-[8rem] '>
+        <section className='container mx-auto flex flex-col items-center my-[8rem] px-4'>
             <div className='w-full flex justify-center text-white mb-[5rem] '>
                 <h1
                     className="relative inline-block text-3xl md:text-6xl font-semibold font-['Inter']
