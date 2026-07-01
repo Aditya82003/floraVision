@@ -36,7 +36,7 @@ const reviews: Review[] = [
 
 const CustomerReview = () => {
     return (
-        <div className='w-full text-white mt-[5rem]'>
+        <div className='w-full text-white mt-[8rem]'>
             <div className='w-full flex justify-center text-white'>
                 <h1
                     className="relative inline-block text-3xl md:text-6xl font-semibold font-['Inter']

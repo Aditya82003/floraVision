@@ -8,7 +8,7 @@ import O2 from "./O2"
 
 const MainSection = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-4">
       <div className="relative h-[2500px] ">
         <img
           src={heroBg}
@@ -21,8 +21,6 @@ const MainSection = () => {
       <TopSelling/>
       <CustomerReview/>
       <O2/>
-      
-
     </div>
   )
 }

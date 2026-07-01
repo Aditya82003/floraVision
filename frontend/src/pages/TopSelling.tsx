@@ -4,7 +4,7 @@ import { topSellingPlants } from "../data/plants"
 
 const TopSelling = () => {
     return (
-        <section className="wrap py-[6rem] px-4">
+        <section className="wrap my-[5rem] ">
             <div className='w-full flex justify-center text-white'>
                 <h1
                     className="relative inline-block text-3xl md:text-6xl font-semibold font-['Inter']
