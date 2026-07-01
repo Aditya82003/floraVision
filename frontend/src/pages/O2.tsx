@@ -1,5 +1,7 @@
 import besto2 from '../assets/c8eb5b1abede1308e0eaf899d1f7faae62a0c2f6.png'
 import Button from '../components/ui/Button'
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 const O2 = () => {
     return (
         <section className='flex flex-col items-center my-[8rem] '>
@@ -44,9 +46,13 @@ const O2 = () => {
                         <h1 className='text-2xl md:text-4xl font-semibold'>We Have Small And Best O2 Plants Collection’s</h1>
                         <p className='text-lg md:text-xl font-semibold leading-6'>Oxygen-producing plants, often referred to as "O2 plants," are those that release oxygen into the atmosphere through the process of photosynthesis.</p>
                         <p className='text-lg md:text-xl font-semibold leading-6'>Many plants can help filter out pollutants and toxins from the air, such as formaldehyde, benzene, and trichloroethylene. This makes the air cleaner and healthier to breathe.</p>
-                        <div className='w-full flex justify-between'>
+                        <div className='w-full flex justify-between items-center'>
                             <Button className='text-xl font-extralight px-8'>Explore</Button>
-                            <div>01/04</div>
+                            <div className='flex'>
+                                <IoIosArrowBack className='text-2xl mr-[2rem]'/>
+                                <span>01/04</span>
+                                <IoIosArrowForward className='text-2xl ml-[2rem]'/>
+                                </div>
                         </div>
                     </div>
                 </div>
