@@ -18,7 +18,7 @@ const SectionHeading = ({
     <div className={clsx("flex w-full justify-center", className)}>
       <Tag
         className={clsx(
-          `relative inline-block px-4 text-3xl font-semibold text-white md:text-6xl
+          `relative inline-block px-4 text-3xl font-semibold text-white md:text-6xl text-shadow-lg
           
           before:absolute
           before:-bottom-3

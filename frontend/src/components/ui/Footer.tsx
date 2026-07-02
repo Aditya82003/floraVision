@@ -19,20 +19,20 @@ const Footer = () => {
           </div>
 
           <p className="text-center md:text-left text-base md:text-xl leading-7 text-gray-300">
-            "From lush indoor greens to vibrant outdoor blooms, our plants are
-            crafted to thrive and elevate your living environment."
+            &quot;From lush indoor greens to vibrant outdoor blooms, our plants are
+            crafted to thrive and elevate your living environment.&quot;
           </p>
         </div>
 
         <div className="text-center md:text-left">
-          <h2 className="mb-6 text-2xl font-semibold">Quick Links</h2>
+          <h2 className="mb-6 text-2xl font-semibold">Quick Link&apos;s</h2>
 
           <ul className="space-y-4 text-gray-300 text-xl">
             <li className="cursor-pointer hover:text-green-400 transition underline">
               Home
             </li>
             <li className="cursor-pointer hover:text-green-400 transition underline">
-              Types of Plants
+              Type&apos;s of Plant&apos;s
             </li>
             <li className="cursor-pointer hover:text-green-400 transition underline">
               Contact

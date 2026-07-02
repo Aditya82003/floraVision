@@ -1,8 +1,9 @@
 import { GoTriangleRight } from "react-icons/go";
-import { MdOutlineStar } from "react-icons/md";
 import Aglaonema from "../assets/c8eb5b1abede1308e0eaf899d1f7faae62a0c2f6.png";
 import RonnieAvvatar from '../assets/72419c36cae7ef6f9c25b97e39a231fc9059935c.png'
 import Stars from "./ui/Star";
+import Button from "./ui/Button";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const HeroBanner = () => {
   return (
@@ -15,12 +16,12 @@ const HeroBanner = () => {
 
             <div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold leading-tight">
-                Earth's Exhale
+                Earth&apos;s Exhale
               </h1>
 
               <p className="mt-5 max-w-xl text-sm sm:text-base md:text-lg lg:text-xl font-light leading-7 text-gray-200">
-                "Earth Exhale" symbolizes the purity and vitality of the
-                Earth's natural environment and its essential role in
+                &quot;Earth Exhale&quot; symbolizes the purity and vitality of the
+                Earth&apos;s natural environment and its essential role in
                 sustaining life.
               </p>
 
@@ -64,7 +65,7 @@ const HeroBanner = () => {
               </p>
             </div>
           </div>
-          
+
 
           <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg">
 
@@ -74,20 +75,28 @@ const HeroBanner = () => {
               className="relative z-10 mx-auto w-52 sm:w-64 md:w-72 lg:w-80 xl:w-96"
             />
 
-            <div className="relative -mt-20 rounded-[2rem] border border-white/20 bg-white/10 pt-28 pb-10 backdrop-blur-xl text-center">
+            <div className="flex flex-col gap-[0.2rem] items-start px-[5rem]  -mt-20 rounded-[2rem] border border-white/20 bg-white/10 pt-28 pb-10 backdrop-blur-xl">
               <h3 className="text-lg sm:text-xl md:text-2xl font-light">
                 Indoor Plant
               </h3>
-
-              <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-light">
-                Aglaonema Plant
-              </h2>
+              <div className="w-full flex items-center justify-between">
+                <h2 className=" text-2xl sm:text-3xl md:text-4xl font-light">
+                  Aglaonema Plant
+                </h2>
+                <MdArrowForwardIos size={24} />
+                
+              </div>
+              <Button className="mt-2 w-[8rem] h-[3rem]">Explore</Button>
+              <div className="flex gap-2 w-full items-center justify-center mt-[1rem]">
+                <div className="w-5 h-2 rounded-full bg-white" />
+                <div className="w-2 h-2 rounded-full bg-white" />
+                <div className="w-2 h-2 rounded-full bg-white" />
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
