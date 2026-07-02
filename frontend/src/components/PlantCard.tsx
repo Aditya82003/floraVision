@@ -4,7 +4,6 @@ type PlantCardProps = {
     price: number;
     image: string;
 };
-import { IoBagHandleOutline } from "react-icons/io5";
 import Button from "./ui/Button";
 import Icon from "./ui/Icon";
 
