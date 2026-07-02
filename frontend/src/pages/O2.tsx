@@ -2,41 +2,11 @@ import besto2 from '../assets/c8eb5b1abede1308e0eaf899d1f7faae62a0c2f6.png'
 import Button from '../components/ui/Button'
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import SectionHeading from '../components/ui/SectionHeading';
 const O2 = () => {
     return (
         <section className='container mx-auto flex flex-col items-center my-[8rem] px-4'>
-            <div className='w-full flex justify-center text-white mb-[5rem] '>
-                <h1
-                    className="relative inline-block text-3xl md:text-6xl font-semibold font-['Inter']
-                before:content-['']
-                before:absolute
-                before:-bottom-3
-                    before:-left-3
-                    before:w-10
-                    md:before:w-16
-                    before:h-10
-                    md:before:h-16
-                    before:border-b-5
-                    before:border-l-5
-                    before:rounded-bl-3xl
-                    before:border-lime-200
-
-                    after:content-['']
-                    after:absolute
-                    after:-right-3
-                    after:-top-1
-                    after:w-10
-                    md:after:w-16
-                    after:h-10
-                    md:after:h-16
-                    after:border-t-4
-                    after:border-r-5
-                    after:rounded-tr-3xl
-                  after:border-lime-200"
-                >
-                    Our Best o2
-                </h1>
-            </div>
+            <SectionHeading>Our Best o2</SectionHeading>
             <div className="w-full min-h-[500px] bg-[rgb(38,46,34)] mt-[5rem] md:mt[10rem] rounded-[6rem] border border-white/50">
                 <div className="w-full h-full flex gap-2 py-8">
                     <div className='hidden relative w-1/2 h-full  md:flex items-center justify-center ' >

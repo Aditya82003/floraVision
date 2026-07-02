@@ -40,11 +40,11 @@ const HeroBanner = () => {
               </div>
             </div>
 
-            
-            <div className="w-full max-w-md rounded-3xl border border-white/20 bg-white/10 p-6 py-12 backdrop-blur-xl mt-[10rem]">
+
+            <div className="relative z-10 w-full  max-w-[26rem] rounded-4xl border border-white/10 bg-white/10 px-[2rem] py-12 backdrop-blur-[4px] mt-[10rem] before:content-[''] before:absolute before:inset-0 before:rounded-4xl before:border before:border-white/20 ">
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 rounded-full bg-amber-100" >
-                    <img src={RonnieAvvatar} alt="Avatar" className="w-full h-full object-cover rounded-full" />
+                  <img src={RonnieAvvatar} alt="Avatar" className="w-full h-full object-cover rounded-full" />
                 </div>
 
                 <div>
@@ -53,19 +53,19 @@ const HeroBanner = () => {
                   </h2>
 
                   <div className="mt-1 flex">
-                   <Stars value={4.5} className='text-amber-300' />
+                    <Stars value={4.5} className='text-amber-300' />
                   </div>
                 </div>
               </div>
 
-              <p className="mt-5 text-sm sm:text-base font-light leading-7 text-gray-200">
+              <p className="mt-5 text-lg sm:text-lg font-light leading-7 text-gray-200">
                 I can't express how thrilled I am with my new natural plants!
                 They bring such a fresh and vibrant energy to my home.
               </p>
             </div>
           </div>
+          
 
-          {/* Right Plant */}
           <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg">
 
             <img

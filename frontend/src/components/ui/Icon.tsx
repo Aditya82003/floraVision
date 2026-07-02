@@ -11,14 +11,12 @@ export type IconName =
 
 type IconProps = {
   name: IconName
-  /** Any CSS size; defaults to 1em so the icon tracks the surrounding font-size. */
   size?: number | string
   strokeWidth?: number
   className?: string
   style?: CSSProperties
 }
 
-/** Single inline-SVG icon set, recolorable via `currentColor`. */
 export function Icon({
   name,
   size = '1em',
