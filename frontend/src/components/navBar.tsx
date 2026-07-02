@@ -9,17 +9,26 @@ const NavBar = () => {
   return (
     <nav className="relative text-white">
       <div className="container mx-auto flex items-center justify-between  px-4 py-2 w-full">
-        <div className="flex gap-2 items-center">
+        <a href="#hero-section" className="flex gap-2 items-center">
           <img src={flowerPot} alt="flowerPot" className='w-12 h-12' />
           <h1 className="text-2xl md:text-3xl font-extrabold">FloraVision.</h1>
-        </div>
+        </a>
 
         <ul className="hidden lg:flex items-center gap-10 ">
-          <li className="cursor-pointer font-['Indie_Flower'] text-2xl">Home</li>
-          <li className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl">
-            Plants Type <IoMdArrowDropdown /></li>
+          <a href="#hero-section" className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl">
+            Home
+          </a>
+          <a
+            href="#top-selling-plant"
+            className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl"
+          >
+            Plants Type <IoMdArrowDropdown />
+          </a>
           <li className="cursor-pointer  font-['Indie_Flower'] text-2xl">More</li>
-          <li className="cursor-pointer  font-['Indie_Flower'] text-2xl">Contact</li>
+          <a href="#contact" className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl">
+            Contact
+          </a>
+
         </ul>
 
         <div className="flex gap-6 items-center">
@@ -33,12 +42,21 @@ const NavBar = () => {
         </div>
       </div>
       {open && (
-        <div className="absolute left-0 top-full z-50 w-full px-6 py-6 lg:hidden bg-[rgba(27,35,22,1)]/10 backdrop-blur-md border-b">
+        <div className="absolute left-0 top-full z-50 w-full px-6 py-6 lg:hidden bg-[rgba(27,35,22,1)]/50 backdrop-blur-md ">
           <ul className="flex flex-col gap-6 text-xl font-['Indie_Flower']">
-            <li >Home</li>
-            <li>Plants Type</li>
+            <a href="#hero-section" className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl">
+              Home
+            </a>
+            <a
+              href="#top-selling-plant"
+              className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl"
+            >
+              Plants Type <IoMdArrowDropdown />
+            </a>
             <li>More</li>
-            <li>Contact</li>
+            <a href="#contact" className="flex items-center gap-2 cursor-pointer font-['Indie_Flower'] text-2xl">
+              Contact
+            </a>
           </ul>
         </div>
       )}

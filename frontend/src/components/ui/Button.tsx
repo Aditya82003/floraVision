@@ -3,7 +3,7 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react'
 type Variant = 'ghost' | 'solid' | 'icon'
 
 const base =
-  'inline-flex items-center justify-center gap-2 font-medium leading-none whitespace-nowrap cursor-pointer transition-colors active:translate-y-px cursor-pointer hover:text-black'
+  'inline-flex items-center justify-center gap-2  leading-none whitespace-nowrap cursor-pointer transition-colors active:translate-y-px cursor-pointer hover:text-black'
 
 const variants: Record<Variant, string> = {
 

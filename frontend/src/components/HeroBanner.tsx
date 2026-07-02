@@ -7,7 +7,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 const HeroBanner = () => {
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 text-white pt-[5rem]">
+    <section id="hero-section" className="container mx-auto px-4 sm:px-6 lg:px-8 text-white pt-[5rem]">
       <div className="relative z-10 flex min-h-screen flex-col justify-center py-12 lg:py-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
 
@@ -27,7 +27,7 @@ const HeroBanner = () => {
 
               <div className="mt-8 flex flex-wrap items-center gap-4 sm:gap-6">
 
-                <Button className='text-xl font-extralight px-8 hover:text-black '>Buy Now</Button>
+                <Button className='text-xl font-extralight px-16 hover:text-black  '>Buy Now</Button>
 
                 <button className="rounded-full border border-white p-3 hover:bg-white hover:text-black transition">
                   <GoTriangleRight size={24} />
