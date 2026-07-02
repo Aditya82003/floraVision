@@ -27,9 +27,7 @@ const HeroBanner = () => {
 
               <div className="mt-8 flex flex-wrap items-center gap-4 sm:gap-6">
 
-                <button className="rounded-xl border border-white px-6 py-3 text-base sm:text-lg hover:bg-white hover:text-black transition">
-                  Buy Now
-                </button>
+                <Button className='text-xl font-extralight px-8 hover:text-black '>Buy Now</Button>
 
                 <button className="rounded-full border border-white p-3 hover:bg-white hover:text-black transition">
                   <GoTriangleRight size={24} />
@@ -86,7 +84,7 @@ const HeroBanner = () => {
                 <MdArrowForwardIos size={24} />
                 
               </div>
-              <Button className="mt-2 w-[8rem] h-[3rem]">Explore</Button>
+              <Button className="mt-2 w-[8rem] h-[3rem] hover:text-black">Explore</Button>
               <div className="flex gap-2 w-full items-center justify-center mt-[1rem]">
                 <div className="w-5 h-2 rounded-full bg-white" />
                 <div className="w-2 h-2 rounded-full bg-white" />

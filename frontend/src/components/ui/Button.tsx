@@ -3,12 +3,12 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react'
 type Variant = 'ghost' | 'solid' | 'icon'
 
 const base =
-  'inline-flex items-center justify-center gap-2 font-medium leading-none whitespace-nowrap cursor-pointer transition-colors active:translate-y-px'
+  'inline-flex items-center justify-center gap-2 font-medium leading-none whitespace-nowrap cursor-pointer transition-colors active:translate-y-px cursor-pointer hover:text-black'
 
 const variants: Record<Variant, string> = {
 
   ghost:
-    'rounded-xl border-2 border-white px-[1.45em] py-[0.6em] text-cta text-white hover:bg-white hover:text-forest',
+    'rounded-xl border-2 border-white px-[1.45em] py-[0.6em]  hover:bg-white hover:text-forest',
 
   solid:
     'rounded-lg border-2 border-white bg-white px-[1.4em] py-[0.55em] text-cta font-bold text-forest-deep hover:border-accent hover:bg-accent',

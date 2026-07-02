@@ -59,7 +59,7 @@ function TrendyCard({
   );
 
   const Content = (
-    <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
+    <div className="relative z-20 flex-1 flex flex-col justify-center text-center lg:text-left">
       <h3 className="text-2xl md:text-3xl font-semibold">
         {title}
       </h3>
@@ -73,7 +73,7 @@ function TrendyCard({
       </p>
 
       <div className="mt-7 flex justify-center lg:justify-start gap-4">
-        <Button className="h-12 w-32 text-lg">
+        <Button className="h-12 w-32 text-lg hover:bg-white hover:text-black">
           Explore
         </Button>
 

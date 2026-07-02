@@ -5,6 +5,8 @@ type PlantCardProps = {
     image: string;
 };
 import { IoBagHandleOutline } from "react-icons/io5";
+import Button from "./ui/Button";
+import Icon from "./ui/Icon";
 
 const PlantCard = ({ name, bio, price, image }: PlantCardProps) => {
     return (
@@ -17,7 +19,9 @@ const PlantCard = ({ name, bio, price, image }: PlantCardProps) => {
                     <p className="mt-2 text-lg font-light tracking-wide min-h-[6rem]">{bio}</p>
                     <div className="mt-2 flex w-full justify-between">
                         <h2 className="text-2xl ">Rs. {price}/-</h2>
-                        <div className="flex items-center justify-center w-8 h-8 border rounded-lg cursor-pointer"><IoBagHandleOutline size={24} /></div>
+                        <Button variant="icon" className="h-12 w-12 text-light ">
+                            <Icon name="bag" size="2rem" />
+                        </Button>
                     </div>
                 </div>
             </div>
