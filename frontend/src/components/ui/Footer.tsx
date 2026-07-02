@@ -27,13 +27,13 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h2 className="mb-6 text-2xl font-semibold">Quick Link&apos;s</h2>
 
-          <ul className="space-y-4 text-gray-300 text-xl">
-            <li className="cursor-pointer hover:text-green-400 transition underline">
+          <ul className="flex flex-col  space-y-4 text-gray-300 text-xl">
+            <a href="#hero-section" className="cursor-pointer hover:text-green-400 transition underline">
               Home
-            </li>
-            <li className="cursor-pointer hover:text-green-400 transition underline">
+            </a>
+            <a href="#top-selling-plant" className="cursor-pointer hover:text-green-400 transition underline">
               Type&apos;s of Plant&apos;s
-            </li>
+            </a>
             <li className="cursor-pointer hover:text-green-400 transition underline">
               Contact
             </li>
